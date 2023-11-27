@@ -1,0 +1,28 @@
+
+// Fonts
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+ul.tasks {
+    list-style: none;
+    padding: 0;
+
+    li {
+        display: block;
+        padding: 8px 0;
+
+        &:first-child {
+            padding-top: 0;
+        }
+
+        &.done span {
+            text-decoration: line-through;
+            opacity: .6;
+        }
+    }
+}
